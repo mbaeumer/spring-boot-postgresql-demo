@@ -7,7 +7,7 @@ import java.io.Serializable;
 public class Contact implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private int id;
+    private Long id;
     @Column(name = "firstname")
     private String firstName;
     @Column(name = "lastname")
@@ -20,11 +20,11 @@ public class Contact implements Serializable {
     @OneToOne(cascade = {CascadeType.ALL})
     private Address address;
 
-    public int getId() {
+    public Long getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(Long id) {
         this.id = id;
     }
 

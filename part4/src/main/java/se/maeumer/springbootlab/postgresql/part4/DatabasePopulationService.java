@@ -17,7 +17,7 @@ public class DatabasePopulationService implements ApplicationListener<ContextRef
     @Override
     public void onApplicationEvent(ContextRefreshedEvent contextRefreshedEvent) {
         Contact contact = new Contact();
-        contact.setId(0);
+        contact.setId(Long.valueOf(0));
         contact.setEmail("test@test.se");
         contact.setFirstName("Martin");
         contact.setLastName("Baeumer");
@@ -32,7 +32,7 @@ public class DatabasePopulationService implements ApplicationListener<ContextRef
         contact.setAddress(address);
         contactRepository.save(contact);
 
-        contact.setId(1);
+        contact.setId(Long.valueOf(1));
         contact.setEmail("test@test.se");
         contact.setFirstName("Martin");
         contact.setLastName("Baeumer");
@@ -41,7 +41,7 @@ public class DatabasePopulationService implements ApplicationListener<ContextRef
         contact.setAddress(address);
         contactRepository.save(contact);
 
-        contact.setId(2);
+        contact.setId(Long.valueOf(2));
         contact.setEmail("test@test.se");
         contact.setFirstName("Martin");
         contact.setLastName("Baeumer");

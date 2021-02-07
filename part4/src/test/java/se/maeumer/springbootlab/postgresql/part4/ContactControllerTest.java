@@ -44,7 +44,7 @@ public class ContactControllerTest {
     public Contact createTestContact(){
         Contact contact = new Contact();
 
-        contact.setId(9999);
+        contact.setId(Long.valueOf(9999));
         contact.setFirstName("John");
         contact.setLastName("Doe");
         contact.setEmail("john.doe@johndoe.com");

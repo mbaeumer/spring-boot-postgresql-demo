@@ -33,4 +33,9 @@ public class ContactController {
     public void createContact(@RequestBody final Contact contact){
         contactService.createContact(contact);
     }
+
+    @DeleteMapping("/{id}")
+    public void deleteContact(@PathVariable("id") final String id){
+        contactService.deleteContact(Long.parseLong(id));
+    }
 }
