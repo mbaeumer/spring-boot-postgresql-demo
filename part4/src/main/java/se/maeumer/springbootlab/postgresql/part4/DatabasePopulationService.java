@@ -24,7 +24,7 @@ public class DatabasePopulationService implements ApplicationListener<ContextRef
         contact.setPhoneNumber("0046736398156");
 
         Address address = new Address();
-        address.setId(0);
+        address.setId(Long.valueOf(0));
         address.setStreet("Some Avenue");
         address.setPostalCode("12345");
         address.setCity("Testtown");
