@@ -1,0 +1,3 @@
+curl -v -H "Content-Type: application/json" -X POST -d '{"firstName": "John", "lastName": "Doe", "email":"test-1@test.com", "addressId":{"street":"Street","postalCode":"77588", "city":"Town"}}' http://localhost:8080/contact
+
+curl -v -H "Content-Type: application/json" -X POST -d '{"firstName": "John", "lastName": "Doe", "email":"test-1@test.com", "address": {"addressId":{"street":"Street","postalCode":"77588", "city":"Town"}}}' http://localhost:8080/contact
